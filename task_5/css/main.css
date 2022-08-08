@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightcyan;
+
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrapper-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.wrapper-heading {
+    margin: 0;
+    color: black;
+    margin-bottom: 10px;
+}
+.wrapper-angle{
+    padding: 2px 5px;
+    background-color: grey;
+    transition: all 0.4s ease;
+}
+.wrapper-angle:hover{
+    background-color: gainsboro;
+}
+.wrapper-span {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 2px solid rgb(154, 153, 153);
+    margin-bottom: 20px;
+}
+
+.intro-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.intro-item {
+    width: 200px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.intro-item__span {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 10px;
+}
+.intro-item__text {
+    color: rgb(99, 99, 99);
+    margin-bottom: 10px;
+}
+.intro-item__star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.intro-item__star::before{
+    content: " ";
+    width: 40px;
+    display: block;
+    border-bottom: 1px solid gainsboro;
+    margin-right: 10px;
+}
+.intro-item__star::after{
+    content: " ";
+    width: 40px;
+    display: block;
+    border-bottom: 1px solid gainsboro;
+    margin-left: 10px;
+}
+.intro-star {
+    color: gold;
+}
+.intro-star-end{
+    color: gainsboro;
+}
+.intro-money{
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.intro-item__del {
+    color: rgb(99, 99, 99);
+    margin-right: 5px;
+}
+.intro-item__ins {
+    font-size: 20px;
+    text-decoration: none;
+}
+.intro-item__link {
+    color: rgb(42, 42, 42);
+    text-decoration: none;
+    border: 1px solid gainsboro;
+    padding: 5px 10px;
+}
+.intro-item__link:hover{
+    border: none;
+    border-bottom: 3px solid lightblue;
+} 
+
+@media only screen and (max-width: 426px) {
+    .wrapper-flex{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .intro-list{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .intro-item {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .intro-item:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 427px) {
+    .wrapper-flex{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .intro-list{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .intro-item {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .intro-item:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 990px) and (min-width: 769px){
+    .wrapper-flex{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .intro-list{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .intro-item {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .intro-item:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 1200px) and (min-width: 991px){
+    .wrapper-flex{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .intro-list{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .intro-item {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .intro-item:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
